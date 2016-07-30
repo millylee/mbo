@@ -1,0 +1,43 @@
+{
+  "name": "mbo",
+  "version": "0.0.2",
+  "description": "static blog renderer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/mbo",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/millylee/mbo.git"
+  },
+  "keywords": [
+    "mbo"
+  ],
+  "author": {
+    "name": "millylee",
+    "email": "millyleecn@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/millylee/mbo/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/millylee/mbo/issues"
+  },
+  "homepage": "https://github.com/millylee/mbo",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "commander": "^2.9.0",
+    "express": "^4.14.0",
+    "fs-extra": "^0.30.0",
+    "inquirer": "^1.1.2",
+    "markdown-it": "^7.0.0",
+    "moment": "^2.14.1",
+    "open": "0.0.5",
+    "rd": "0.0.2",
+    "serve-static": "^1.11.1",
+    "swig": "^1.4.2"
+  }
+}

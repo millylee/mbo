@@ -1,0 +1,60 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var program = require('commander'),
+    chalk = require('chalk');
+
+// 版本号
+program.version(require('../package').version);
+
+// init 命令
+program
+    .command('init [dir]')
+    .description(chalk.cyan('初始化一个博客'))
+    .action(require('../lib/init'));
+
+// new 命令
+program
+    .command('new [postname]')
+    .description(chalk.cyan('新建一篇文章'))
+    .action(require('../lib/new'));
+
+// serve 命令
+program
+    .command('serve [dir]')
+    .description(chalk.cyan('开启实时预览'))
+    .action(require('../lib/serve'));
+
+// build 命令
+program
+    .command('build [dir]')
+    .description(chalk.cyan('生成静态HTML'))
+    .option('-o, --output <dir>', '生成静态HTML存放目录')
+    .action(require('../lib/build'));
+
+// 参数错误
+program
+    .command('*')
+    .action(function(env) {
+        console.log('');
+        console.log(chalk.cyan('  %s') + ' 参数名无效，请输入 ' + chalk.cyan('mbo --help') + ' 查看帮助', env);
+    });
+
+// 解析命令
+program.parse(process.argv);
+
+process.on('exit', function() {
+    if (process.argv.length === 2) {
+        console.log(chalk.cyan('   __  __ ____   ____  '));
+        console.log(chalk.cyan('  |  \\/  |  _ \\ / __ \\ '));
+        console.log(chalk.cyan('  | \\  / | |_) | |  | |'));
+        console.log(chalk.cyan('  | |\\/| |  _ <| |  | |'));
+        console.log(chalk.cyan('  | |  | | |_) | |__| |'));
+        console.log(chalk.cyan('  |_|  |_|____/ \\____/ '));
+        console.log('');
+        console.log('  Version: ' + program.version());
+
+        program.help();
+    };
+});

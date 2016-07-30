@@ -1,0 +1,39 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# mac os x
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# node
+logs
+*.log
+pids
+*.pid
+*.seed
+.grunt
+build/Release
+node_modules
+
+# hexo
+public/
+.deploy*/
+db.json
+
+## IntelliJ software
+*.iml
+*.ipr
+*.iws
+.idea/
