@@ -2,7 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/mbo.svg?style=flat-square)](https://npmjs.org/package/mbo)
 
-> A simple markdown blog render.
+> 简单的 Markdown 博客生成
 
 ```
    __  __ ____   ____
@@ -24,19 +24,25 @@
 ### 1.博客初始化
 
 ```
-[sudo] mbo init [dir]
+mbo init [dir]
 ```
 
 初始化博客文件结构
 
-### 2.mbo new [postname]
+### 2.新建文章
 
-新建文章
+```
+mbo new [postname]
+```
 
-### 3.mbo serve [dir]
+### 3.博客预览
 
-开启实时预览
+```
+mbo serve [dir]
+```
 
-### 4.mbo build [options] [dir]
+### 4.生成静态文件
 
-生成静态HTML文件
+```
+mbo build [options] [dir]
+```
