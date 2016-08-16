@@ -39,5 +39,8 @@
     "rd": "0.0.2",
     "serve-static": "^1.11.1",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "front-matter": "^2.1.0"
   }
 }
