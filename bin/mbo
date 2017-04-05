@@ -2,11 +2,12 @@
 
 'use strict';
 
-var program = require('commander'),
-    chalk = require('chalk');
+const program = require('commander');
+const chalk = require('chalk');
+const pkg = require('../package');
 
-// 版本号
-program.version(require('../package').version);
+// version
+program.version(pkg.version);
 
 // init 命令
 program

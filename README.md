@@ -4,6 +4,8 @@
 
 > 简单的 Markdown 博客生成
 
+- *请使用 6.x + LTS 版本*
+
 ```
    __  __ ____   ____
   |  \/  |  _ \ / __ \
@@ -24,7 +26,7 @@
 ### 1.博客初始化
 
 ```
-mbo init [dir]
+mbo init <dir></dir>
 ```
 
 初始化博客文件结构
@@ -32,17 +34,17 @@ mbo init [dir]
 ### 2.新建文章
 
 ```
-mbo new [postname]
+mbo new <postname>
 ```
 
 ### 3.博客预览
 
 ```
-mbo serve [dir]
+mbo serve <dir>
 ```
 
 ### 4.生成静态文件
 
 ```
-mbo build [options] [dir]
+mbo build <options> <dir>
 ```

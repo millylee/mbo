@@ -1,5 +1,5 @@
 {
-    "host": "http://127.0.0.1",
+    "host": "http:localhost",
     "port": 8777,
     "title": "Another blog built with MBO"
 }
